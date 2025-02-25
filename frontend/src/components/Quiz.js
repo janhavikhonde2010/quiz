@@ -72,7 +72,7 @@ const Quiz = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/results/save', resultData);
+      await axios.post('https://quiz-xs4h-api.vercel.app/api/results/save', resultData);
       navigate('/see-results');
     } catch (error) {
       console.error('Error saving quiz result:', error);
